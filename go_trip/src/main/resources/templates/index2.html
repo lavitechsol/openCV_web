@@ -1,0 +1,63 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+	<meta charset=utf-8 />	
+    <link type="text/css" rel="stylesheet" th:href="@{/css/main.css}">
+    <link type="text/css" rel="stylesheet" th:href="@{/css/index2.css}">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+	<script src="/js/index2.js"></script>
+</head>
+<body id="body"> 
+	<div style="text-align: center;"><h1>Go Trip</h1></div>  	
+	<table>
+		<tbody style="height: 100vh;">
+			<tr>
+				<td style="width: 100vw;padding-top: 5%;">
+					<div id="drop-zone">
+						<label id="text" style="font-size: 1.5em;">Input</label>
+						<!-- <label id="click-to-select-file" for="input" class="style-scope vs-app"></label>  -->				
+						<img id="uploadedImage" src="" alt="your image" noresize="noresize" hidden
+						/> 
+						<!-- <input type="file" id="input" class="style-scope vs-app" onchange="readURL(this);"
+							ondragover="readURL(this);" /> -->
+						
+					</div>
+					<div id="processed-block">
+						<label id="image_text" style="font-size: 1.5em;">Output</label>
+						<img id="processed_image"  src="" alt="your image" noresize="noresize" hidden /> 
+						
+					</div>
+				</td>
+				
+			</tr>
+			<tr>
+				<td style="width: 100vw;padding-top: 5%;">
+					<div id="submitBtn" >
+						<label class="custom-file-upload" style="color: #fff;background-color: #0275d8;">Submit
+						   <input type="file" id="input" style="display: none;" value="Submit" onchange="readURL(this);"
+							ondragover="readURL(this);" >
+						</label>
+						
+				    	<!-- <input type="button" id="btn" class="btn btn-primary" value="Submit" onclick="uploadFile()"> -->
+				    </div> 
+				    <div id="processBtn" >
+				    	<input type="button" id="btn" class="btn btn-primary" value="Process" onclick="uploadFile()">
+				    </div> 
+				</td>
+			    
+			</tr>
+		</tbody>
+   	 
+
+    
+    </table>
+     <div class="modal"><!-- Place at bottom of page --></div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+
+.custom-file-upload {
+
+    cursor: pointer;
+    font-family: Arial;
+    display: inline-block;
+    padding: .375rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border: .0625rem solid transparent;
+    border-radius: .25rem;
+}
+/*
+#uploadBtn {
+	width: 45%;
+	height: 60%;
+	position: absolute;
+	left: 19%;
+	top: 20%;
+	position: relative;	
+}*/
+
+#submitBtn {  
+    position: absolute;
+    left: 19%;
+    /* top: 80%; */
+  
+}
+
+#processBtn {  
+    position: absolute;
+    left: 75%;
+    /* top: 80%; */
+  
+}
+
+/*.uploaded-image {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	margin: 0px auto;
+}
+*/
+/*#drop-zone {
+
+	width: 45%;
+
+	height: 60%;
+	min-height: 60%;
+	position: absolute;
+	left: 1%;
+	top: 100px;
+
+	border: 2px dashed rgba(0, 0, 0, .3);
+	border-radius: 20px;
+	font-family: Arial;
+	text-align: center;
+	position: relative;
+	
+	font-size: 20px;
+	color: rgba(0, 0, 0, .3);
+	
+	float: left;
+}
+*/
+.imgBorder{
+	display: inline-block;
+	border: 2px dashed rgba(0, 0, 0, .3); 
+	border-radius: 20px;
+}
+#uploadedImage,#processed_image{	
+	/* padding: 2px;  */
+	/* border: 2px dashed rgba(0, 0, 0, .3); */
+	/* width: 96%;
+  	height: 99%; */
+	/* margin-left: auto;
+	margin-right: auto;
+	 */
+	 max-height: 60vh;
+	 max-width: 43vw;
+	/* min-height: 30.5vh;*/  
+	/* height: auto;  */
+	
+	
+	/*min-width: 50.75vw;   */    
+	/* width: auto; */
+	   
+	/* position: absolute; */
+  /*  left: 50%;
+   top: 50%; */
+ /* -webkit-transform: translateY(35%) translateX(0%); */
+}
+.noBorder{
+	border: none;
+}
+#drop-zone{
+	width: 43vw;
+    height: 60vh; 
+   /*  min-height: 60vh; */
+    left: 1%; 
+    border: 2px dashed rgba(0, 0, 0, .3); 
+    border-radius: 20px;
+    font-family: Arial;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .3);
+   
+    float: left;	
+}
+
+#processed-block {
+	width: 43vw;
+    height: 60vh; 
+    min-height: 60vh;	
+	right: 1%;
+	border: 2px dashed rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    font-family: Arial;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .3);
+
+	float: right;
+}
+/*#processed-block {
+	
+	width: 45%;
+	
+	height: 60%;
+
+	position: absolute;
+	
+	top: 100px;
+	right: 1%;
+	
+	border: 2px dashed rgba(0, 0, 0, .3);
+	border-radius: 20px;
+	font-family: Arial;
+	text-align: center;
+	position: relative;
+
+	font-size: 20px;
+	color: rgba(0, 0, 0, .3);
+
+	float: right;
+}
+*/
+#drop-zone input {
+	/*Important*/
+	position: absolute;
+	/*Important*/
+	cursor: pointer;
+	left: 0px;
+	top: 0px;
+	/*Important This is only comment out for demonstration purposes.
+        opacity:0; */
+}
+
+/*Important*/
+#drop-zone.mouse-over {
+	border: 2px dashed rgba(0, 0, 0, .5);
+	color: rgba(0, 0, 0, .5);
+}
+
+.display-none{
+	
+	display: none;
+}
+
